@@ -1,0 +1,35 @@
+{
+  "name": "sentiment-analysis",
+  "version": "0.1.0",
+  "description": "This application retrieves data from a social media website and performs sentiment analysis to provide with a general score over a certain topic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srmrox/sentiment-analysis.git"
+  },
+  "keywords": [
+    "sentiment",
+    "analysis",
+    "machine",
+    "learning",
+    "social",
+    "media"
+  ],
+  "author": "Shahrukh Malik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srmrox/sentiment-analysis/issues"
+  },
+  "homepage": "https://github.com/srmrox/sentiment-analysis#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "sentiment": "^5.0.1",
+    "twit": "^2.2.11"
+  }
+}

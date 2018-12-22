@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Sentiment Analysis</title>
+        <style type="text/css">* {font-family:arial, sans-serif;}</style>
+    </head>
+    <body>
+        <h1>Sentiment Analysis</h1>
+        <div id=input>
+            <form action="/" method="post">
+                <input name="keyword" type="text" class="input" placeholder="Enter keyword" required>
+                <input name="dateSince" type="text" class="input" placeholder="yyyy-mm-dd" required>
+                <input name="count" type="number" class="input" placeholder="100" required>
+                <input type="submit" class="button" value="Get results">
+            </form>
+        </div>
+        <hr>
+        <div id="content">
+            <% if(tweetText!==null) { %>
+                <table border="1">
+                    <tr>
+                        <th>#</th>
+                        <th>Tweet</th>
+                        <th>AFINN Polarity</th>
+                    </tr>
+                    <% for (var i = tweetText.length-1; i >= 0; i--) { %>
+                    <tr>
+                        <td><%- 99-i %></td>
+                        <td><%- tweetText[i] %></td>
+                        <td><%- tweetSenti[i] %>%</td>
+                    </tr>
+                    <% } %>
+                </table>
+            <% } %>
+        </div>
+    </body>
+</html>
